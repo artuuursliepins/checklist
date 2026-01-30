@@ -1,0 +1,134 @@
+:root{
+  --bg:#0c0c0f;
+  --panel:#14141a;
+  --text:#f2f2f5;
+  --muted:#a8a8b3;
+  --line:#262633;
+  --ok:#2ecc71;
+  --warn:#f39c12;
+  --bad:#e74c3c;
+  --chip:#1e1e2a;
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.top{
+  padding:16px;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg, #111118, #0c0c0f);
+}
+
+.title h1{ margin:0 0 6px 0; font-size:20px; }
+.sub{ margin:0; color:var(--muted); font-size:13px; }
+
+.controls{
+  margin-top:12px;
+  display:grid;
+  gap:10px;
+  grid-template-columns: 1fr;
+}
+
+input[type="search"], select{
+  width:100%;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:var(--panel);
+  color:var(--text);
+  outline:none;
+}
+
+.checkboxRow{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.btnRow{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.btn{
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:var(--panel);
+  color:var(--text);
+  cursor:pointer;
+}
+.btn:hover{ filter:brightness(1.08); }
+.btn.danger{ border-color:#3a1d1d; background:#1a0f10; }
+
+.main{ padding:16px; }
+.stats{ color:var(--muted); margin-bottom:10px; font-size:13px; }
+
+.card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:12px;
+  margin-bottom:10px;
+}
+
+.row{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+}
+
+.itemTitle{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.name{ font-weight:650; }
+.chip{
+  padding:3px 8px;
+  border-radius:999px;
+  background:var(--chip);
+  color:var(--muted);
+  border:1px solid var(--line);
+  font-size:12px;
+}
+.small{ color:var(--muted); font-size:12px; margin-top:6px; line-height:1.35; }
+
+.meta{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+
+.qty{
+  width:86px;
+  padding:8px 10px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#101016;
+  color:var(--text);
+}
+
+.status{
+  padding:8px 10px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#101016;
+  color:var(--text);
+}
+
+.foot{
+  padding:14px 16px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:12px;
+}
